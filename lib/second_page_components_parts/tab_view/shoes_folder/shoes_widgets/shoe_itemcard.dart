@@ -81,7 +81,7 @@ class Mainone extends StatelessWidget {
                                   textStyle:
                                       Theme.of(context).textTheme.headline6,
                                   color: Colors.black87,
-                                  fontSize: 15,
+                                  fontSize: getProportionateScreenWidth(15),
                                   letterSpacing: 1.0,
                                 ),
                               ),
@@ -95,7 +95,7 @@ class Mainone extends StatelessWidget {
                                   textStyle:
                                       Theme.of(context).textTheme.headline2,
                                   color: Colors.black87,
-                                  fontSize: 20,
+                                  fontSize: getProportionateScreenWidth(20),
                                   letterSpacing: 1.0,
                                 ),
                               ),
@@ -118,7 +118,8 @@ class Mainone extends StatelessWidget {
                                               .textTheme
                                               .headline6,
                                           color: Colors.black87,
-                                          fontSize: 12,
+                                          fontSize:
+                                              getProportionateScreenWidth(12),
                                           letterSpacing: 1.0,
                                         ),
                                       ),
@@ -131,7 +132,8 @@ class Mainone extends StatelessWidget {
                                                 .textTheme
                                                 .headline6,
                                             color: Colors.black87,
-                                            fontSize: 11,
+                                            fontSize:
+                                                getProportionateScreenWidth(11),
                                             letterSpacing: 1.0,
                                           ),
                                         ),
@@ -145,12 +147,12 @@ class Mainone extends StatelessWidget {
                                       textStyle:
                                           Theme.of(context).textTheme.headline6,
                                       color: Colors.black87,
-                                      fontSize: 12,
+                                      fontSize: getProportionateScreenWidth(12),
                                       letterSpacing: 1.0,
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 5,
+                                    height: getProportionateScreenWidth(5),
                                   ),
                                 ],
                               ),

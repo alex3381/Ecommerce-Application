@@ -1,5 +1,6 @@
 import 'package:consistency_seventh_son/card_animaion/widgets/animated_card_deck.dart';
 import 'package:consistency_seventh_son/card_animaion/widgets/atm_card.dart';
+import 'package:consistency_seventh_son/universal_models/size_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -79,12 +80,7 @@ class _PlaygroundPageState extends State<PlaygroundPage>
         // color: Colors.[200],
         child: Column(
           children: [
-            // SizedBox(height: 25),
-            // Text(
-            //   "Lamp star",
-            //   style: TextStyle(color: Colors.green[100], fontSize: 30),
-            // ),
-            // SizedBox(height: 25),
+            SizedBox(height: getProportionateScreenWidth(140)),
             Expanded(
               child: CustomScrollView(
                 slivers: [
@@ -92,10 +88,9 @@ class _PlaygroundPageState extends State<PlaygroundPage>
                     child: ListView(
                       children: [
                         AnimatedCardDeck(
-                          cardsDetailsList: cardsDetailsList,
-                          size: 100,
-                        ),
-                        SizedBox(height: 25),
+                            cardsDetailsList: cardsDetailsList,
+                            size: getProportionateScreenWidth(100)),
+                        SizedBox(height: getProportionateScreenWidth(25)),
                         Row(
                           children: [],
                         )
@@ -108,29 +103,6 @@ class _PlaygroundPageState extends State<PlaygroundPage>
           ],
         ),
       ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: [
-      //     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-      //     BottomNavigationBarItem(
-      //         icon: Icon(Icons.search_rounded), label: "Search"),
-      //     BottomNavigationBarItem(
-      //         icon: Icon(Icons.settings), label: "Settings"),
-      //   ],
-      // ),
     );
   }
 }
-
-// }
-//     return Scaffold(
-//         backgroundColor: Colors.white,
-//         body: Center(
-//             child: AnimatedCardDeck(
-//           cardsDetailsList: cardsDetailsList,
-//           size: MediaQuery.of(context).size.width / 4.0,
-//         )));
-//   }
-// }
-
-// bool isOut = false;
-// }

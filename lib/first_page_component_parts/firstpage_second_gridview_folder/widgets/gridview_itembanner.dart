@@ -28,46 +28,53 @@ class Item_Banner extends StatelessWidget {
             ),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 3),
-                  child: Text(
-                    demoproductions.title,
-                    style: GoogleFonts.oswald(
-                      textStyle: Theme.of(context).textTheme.headline6,
-                      color: demoproductions.color[0],
-                      fontSize: getProportionateScreenWidth(13),
+              Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 3),
+                      child: Expanded(
+                        child: Text(
+                          demoproductions.title,
+                          style: GoogleFonts.oswald(
+                            textStyle: Theme.of(context).textTheme.headline6,
+                            color: demoproductions.color[0],
+                            fontSize: getProportionateScreenWidth(13),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                IconButton(
-                  iconSize: getProportionateScreenWidth(13),
-                  icon: Icon(
-                    Icons.shopping_cart,
-                    color: demoproductions.color[0],
-                  ),
-                ),
-                Expanded(
-                    child: Text(
-                  "\$${demoproductions.price}",
-                  maxLines: 1,
-                  style: GoogleFonts.oswald(
-                    textStyle: Theme.of(context).textTheme.headline1,
-                    color: Colors.black,
-                    fontSize: getProportionateScreenWidth(13),
-                  ),
-                ))
-              ]),
+                    Expanded(
+                      child: IconButton(
+                        iconSize: getProportionateScreenWidth(13),
+                        icon: Icon(
+                          Icons.shopping_cart,
+                          color: demoproductions.color[0],
+                        ),
+                      ),
+                    ),
+                    Text(
+                      "\$${demoproductions.price}",
+                      maxLines: 1,
+                      style: GoogleFonts.oswald(
+                        textStyle: Theme.of(context).textTheme.headline1,
+                        color: Colors.black,
+                        fontSize: getProportionateScreenWidth(13),
+                      ),
+                    )
+                  ]),
               Row(children: [
                 Expanded(
                   child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         demoproductions.description,
                         maxLines: 2,
                         style: GoogleFonts.oswald(
-                          textStyle: Theme.of(context).textTheme.headline1,
-                          color: Colors.black,
+                          textStyle: Theme.of(context).textTheme.headline6,
+                          color: Colors.grey,
                           fontSize: getProportionateScreenWidth(10),
                         ),
                       )),

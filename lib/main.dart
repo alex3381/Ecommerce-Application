@@ -1,9 +1,8 @@
+import 'package:consistency_seventh_son/register_login_pageroute_onboarding_folders/onboarding_wellcome_screen_folder/welcomescreen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import 'home_view.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: "Montserrat",
       ),
-      home: HomeView(),
+      home: Onboard_Screen(),
       // HomePagee(),
     );
   }

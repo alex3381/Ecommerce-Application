@@ -1,7 +1,9 @@
 import 'package:consistency_seventh_son/first_page_component_parts/firstpage_second_gridview_folder/model/gridview_supstitute_model.dart';
-import 'package:consistency_seventh_son/first_page_component_parts/firstpage_second_gridview_folder/widgets/gridview_itembanner.dart';
+// import 'package:consistency_seventh_son/first_page_component_parts/firstpage_second_gridview_folder/widgets/gridview_itembannerrs.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'gridview_itembanner.dart';
 
 class buildInstructorGrid extends StatelessWidget {
   const buildInstructorGrid({
@@ -17,51 +19,49 @@ class buildInstructorGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: press,
-        child: Stack(children: [
-          Padding(
-              padding: EdgeInsets.all(5),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                      color: demoproductions.cardColor2.withOpacity(0.4),
-                      spreadRadius: 2,
-                      blurRadius: 2,
-                      offset: Offset(0, 1), // changes position of shadow
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child: Stack(
+              overflow: Overflow.visible,
+              clipBehavior: Clip.hardEdge,
+              fit: StackFit.passthrough,
+              children: [
+                Material(
+                  elevation: 7,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFC5C5),
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 2.0,
+                          spreadRadius: 0.0,
+                          offset: Offset(
+                              2.0, 2.0), // shadow direction: bottom right
+                        )
+                      ],
                     ),
-                  ],
-                ),
-                clipBehavior: Clip.antiAlias,
-                child: Stack(
-                  overflow: Overflow.visible,
-                  fit: StackFit.loose,
-                  children: [
-                    Hero(
+                    child: Hero(
                       tag: demoproductions.id.toString(),
                       child: AspectRatio(
-                        aspectRatio: 17.0 / 16.0,
+                        aspectRatio: 10.0 / 15.0,
                         child: Image.asset(demoproductions.image[0],
-                            fit: BoxFit.cover),
+                            fit: BoxFit.contain),
                       ),
                     ),
-                    Stack(
-                        overflow: Overflow.visible,
-                        fit: StackFit.loose,
-                        clipBehavior: Clip.antiAlias,
-                        children: [
-                          Positioned(
-                            right: 5,
-                            bottom: 0,
-                            left: 5,
-                            child: Item_Banner(
-                              demoproductions: demoproductions,
-                            ),
-                          ),
-                        ]),
-                  ],
+                  ),
                 ),
-              ))
-        ]));
+                Positioned(
+                  right: 5,
+                  bottom: -30,
+                  left: 5,
+                  child: Item_Banner(
+                    demoproductions: demoproductions,
+                  ),
+                ),
+              ]),
+        ));
+    // );
   }
 }

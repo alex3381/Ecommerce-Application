@@ -1,4 +1,3 @@
-
 import 'package:consistency_seventh_son/second_page_components_parts/Clipper_and%20Others/customer_clipper.dart';
 import 'package:consistency_seventh_son/second_page_components_parts/dashboard/dashboard.dart';
 import 'package:consistency_seventh_son/second_page_components_parts/secondpage_models/comprehensive.dart';
@@ -36,29 +35,81 @@ class secondpage_productdetails extends StatelessWidget {
             floating: true,
             snap: true,
             centerTitle: true,
-            leading: IconButton(
-                icon: SvgPicture.asset(
-                  'assets/icons/back_arrow.svg',
-                  color: Colors.white,
+
+            leading: Card(
+              elevation: 10,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(35.0),
+              ),
+              child: ClipOval(
+                child: Material(
+                  color: Colors.transparent, // button color
+                  child: InkWell(
+                    splashColor: Colors.red, // inkwell color
+                    child: SizedBox(
+                      width: 35,
+                      height: 35,
+                      child: IconButton(
+                          icon: SvgPicture.asset(
+                            'assets/icons/back_arrow.svg',
+                            color: location.cardColor2,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          }),
+                    ),
+                  ),
                 ),
-                onPressed: () {
-                  Navigator.pop(context);
-                }),
+              ),
+            ),
             actions: <Widget>[
-              IconButton(
-                onPressed: () => {},
-                icon: SvgPicture.asset(
-                  'assets/icons/add_to_cart.svg',
-                  color: Colors.white,
+              Card(
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(35.0),
                 ),
+                child: ClipOval(
+                    child: Material(
+                        color: Colors.transparent, // button color
+                        child: InkWell(
+                          splashColor: Colors.red, // inkwell color
+                          child: SizedBox(
+                            width: 35,
+                            height: 35,
+                            child: IconButton(
+                              onPressed: () => {},
+                              icon: SvgPicture.asset(
+                                'assets/icons/add_to_cart.svg',
+                                color: location.cardColor2,
+                              ),
+                            ),
+                          ),
+                        ))),
               ),
-              IconButton(
-                onPressed: () => {},
-                icon: SvgPicture.asset(
-                  'assets/icons/menu.svg',
-                  color: Colors.white,
-                ),
-              ),
+              Card(
+                  elevation: 10,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(35.0),
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.transparent, // button color
+                      child: InkWell(
+                        splashColor: Colors.red, // inkwell color
+                        child: SizedBox(
+                          width: 35,
+                          height: 35,
+                          child: IconButton(
+                            onPressed: () => {},
+                            icon: SvgPicture.asset(
+                              'assets/icons/menu.svg',
+                              color: location.cardColor2,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )),
             ],
 
             expandedHeight: 230,
@@ -118,7 +169,7 @@ class secondpage_productdetails extends StatelessWidget {
                       child: Hero(
                         tag: location.id.toString(),
                         child: AspectRatio(
-                          aspectRatio: 10.0 / 10.0,
+                          aspectRatio: 6.0 / 7.0,
                           child: Image.asset(
                             location.image[0],
                             fit: BoxFit.contain,

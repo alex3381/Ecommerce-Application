@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Bag_Product_Details extends StatelessWidget {
   final Crank cooks;
   final Function press;
-  const Bag_Product_Details ({
+  const Bag_Product_Details({
     Key key,
     this.cooks,
     this.press,

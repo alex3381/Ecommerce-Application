@@ -1,4 +1,3 @@
-
 import 'package:consistency_seventh_son/second_page_components_parts/tab_view/headphones_folder/headphone_model/headphone_model.dart';
 import 'package:consistency_seventh_son/universal_models/size_config.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +95,7 @@ class Frank extends StatelessWidget {
                                   textStyle:
                                       Theme.of(context).textTheme.headline2,
                                   color: Colors.black87,
-                                  fontSize: 10,
+                                  fontSize: getProportionateScreenWidth(10),
                                   letterSpacing: 1.0,
                                 ),
                               ),
@@ -119,7 +118,8 @@ class Frank extends StatelessWidget {
                                               .textTheme
                                               .headline6,
                                           color: Colors.black87,
-                                          fontSize: 12,
+                                          fontSize:
+                                              getProportionateScreenWidth(12),
                                           letterSpacing: 1.0,
                                         ),
                                       ),
@@ -132,7 +132,8 @@ class Frank extends StatelessWidget {
                                                 .textTheme
                                                 .headline6,
                                             color: Colors.black87,
-                                            fontSize: 11,
+                                            fontSize:
+                                                getProportionateScreenWidth(11),
                                             letterSpacing: 1.0,
                                           ),
                                         ),
@@ -146,12 +147,12 @@ class Frank extends StatelessWidget {
                                       textStyle:
                                           Theme.of(context).textTheme.headline6,
                                       color: Colors.black87,
-                                      fontSize: 12,
+                                      fontSize: getProportionateScreenWidth(12),
                                       letterSpacing: 1.0,
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 5,
+                                    height: getProportionateScreenWidth(5),
                                   ),
                                 ],
                               ),

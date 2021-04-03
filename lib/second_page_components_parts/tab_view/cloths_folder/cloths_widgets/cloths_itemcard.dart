@@ -84,7 +84,7 @@ class Alexis extends StatelessWidget {
                                   textStyle:
                                       Theme.of(context).textTheme.headline6,
                                   color: Colors.black87,
-                                  fontSize: 20,
+                                  fontSize: getProportionateScreenWidth(20),
                                   letterSpacing: 1.0,
                                 ),
                               ),
@@ -98,7 +98,7 @@ class Alexis extends StatelessWidget {
                                   textStyle:
                                       Theme.of(context).textTheme.headline2,
                                   color: Colors.black87,
-                                  fontSize: 10,
+                                  fontSize: getProportionateScreenWidth(10),
                                   letterSpacing: 1.0,
                                 ),
                               ),
@@ -121,7 +121,8 @@ class Alexis extends StatelessWidget {
                                               .textTheme
                                               .headline6,
                                           color: Colors.black87,
-                                          fontSize: 12,
+                                          fontSize:
+                                              getProportionateScreenWidth(12),
                                           letterSpacing: 1.0,
                                         ),
                                       ),
@@ -134,7 +135,8 @@ class Alexis extends StatelessWidget {
                                                 .textTheme
                                                 .headline6,
                                             color: Colors.black87,
-                                            fontSize: 11,
+                                            fontSize:
+                                                getProportionateScreenWidth(11),
                                             letterSpacing: 1.0,
                                           ),
                                         ),
@@ -148,12 +150,12 @@ class Alexis extends StatelessWidget {
                                       textStyle:
                                           Theme.of(context).textTheme.headline6,
                                       color: Colors.black87,
-                                      fontSize: 12,
+                                      fontSize: getProportionateScreenWidth(12),
                                       letterSpacing: 1.0,
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 5,
+                                    height: getProportionateScreenWidth(5),
                                   ),
                                 ],
                               ),

@@ -27,7 +27,7 @@ class Shoeee extends StatelessWidget {
             crossAxisCount: 2,
             mainAxisSpacing: 4,
             crossAxisSpacing: 4,
-            childAspectRatio: 0.68,
+            childAspectRatio: 0.90,
           ),
           // padding: EdgeInsets.all(2),
           // padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),

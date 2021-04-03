@@ -7,9 +7,10 @@ import 'package:consistency_seventh_son/first_page_component_parts/firstpage_sec
 import 'package:consistency_seventh_son/first_page_component_parts/widgets/background_colors.dart';
 import 'package:consistency_seventh_son/first_page_component_parts/widgets/carousel_one.dart';
 import 'package:consistency_seventh_son/first_page_component_parts/widgets/homepage_header_design.dart';
-import 'package:consistency_seventh_son/first_page_component_parts/widgets/search_bar.dart';
 import 'package:consistency_seventh_son/universal_models/size_config.dart';
+import 'package:consistency_seventh_son/universal_wigdet_folder/application_category/application_category.dart';
 import 'package:consistency_seventh_son/universal_wigdet_folder/categories_all/categories_all.dart';
+import 'package:consistency_seventh_son/universal_wigdet_folder/wavvy_letters/wavvy_letters.dart';
 import 'package:flutter/material.dart';
 
 class Firsthome_Page extends StatelessWidget {
@@ -44,16 +45,9 @@ class Firsthome_Page extends StatelessWidget {
                 [
                   Stack(children: [
                     BacgroundColor(),
-                    Search_Bar(),
-                    Positioned(
-                      top: 10,
-                      left: 0,
-                      right: 0,
-
-                      child: Carousel_plus_first_horinzontallistview(),
-
-                      // Catego_all(),
-                    )
+                    Carousel_plus_first_horinzontallistview(),
+                    Wavvy_Lettars(),
+                    Category(),
                   ]),
                 ],
               ),
@@ -75,9 +69,7 @@ class Firsthome_Page extends StatelessWidget {
                 crossAxisSpacing: 10,
               ),
               delegate: SliverChildBuilderDelegate(
-                (BuildContext context, int index) =>
-                    // itemBuilder: (context, index) =>
-                    FirstPage_GridView(
+                (BuildContext context, int index) => FirstPage_GridView(
                   racoons: racoons[index],
                   press: () => Navigator.push(
                       context,
@@ -102,14 +94,12 @@ class Firsthome_Page extends StatelessWidget {
             SliverGrid(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 8.0 / 9.0,
+                childAspectRatio: 4.0 / 6.0,
                 mainAxisSpacing: 10.0,
                 crossAxisSpacing: 10,
               ),
               delegate: SliverChildBuilderDelegate(
-                (BuildContext context, int index) =>
-                    // itemBuilder: (context, index) =>
-                    buildInstructorGrid(
+                (BuildContext context, int index) => buildInstructorGrid(
                   demoproductions: demoproductions[index],
                   press: () => Navigator.push(
                       context,

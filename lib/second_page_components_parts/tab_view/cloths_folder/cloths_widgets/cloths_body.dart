@@ -1,6 +1,5 @@
 import 'package:consistency_seventh_son/second_page_components_parts/tab_view/cloths_folder/cloths_model/cloths_model.dart';
 import 'package:consistency_seventh_son/second_page_components_parts/tab_view/cloths_folder/cloths_widgets/cloths_itemcard.dart';
-import 'package:consistency_seventh_son/second_page_components_parts/tab_view/cloths_folder/cloths_widgets/cloths_product_detail_page.dart';
 import 'package:flutter/material.dart';
 
 class Cloths extends StatelessWidget {
@@ -25,9 +24,9 @@ class Cloths extends StatelessWidget {
           itemCount: demoproducts.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            mainAxisSpacing: 4,
-            crossAxisSpacing: 4,
-            childAspectRatio: 0.68,
+            childAspectRatio: 0.90,
+            mainAxisSpacing: 10.0,
+            crossAxisSpacing: 10,
           ),
           // padding: EdgeInsets.all(2),
           // padding: EdgeInsets.symmetric(vertical: 2, horizontal: 2),
@@ -37,10 +36,10 @@ class Cloths extends StatelessWidget {
                 pressOnSeeMore: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Detail_views(
-                        demoproducts: demoproducts[index],
-                      ),
-                    )),
+                        // builder: (context) => Detail_views(
+                        //   demoproducts: demoproducts[index],
+                        // ),
+                        )),
               )),
     )
         // )

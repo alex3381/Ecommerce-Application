@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-Color firstColor = Color(0XFFFFACAC);
-Color secondColor = Color(0XFFFFACAC);
+Color firstColor = Color(0XFFFFA726);
+// (0XFFFFACAC);
+Color secondColor = Color(0xFFFF9E80);
+// (0XFFFFACAC);
 
 class HomeScreenTopPart extends StatefulWidget {
   @override
@@ -23,8 +25,9 @@ class _HomeScreenTopPartState extends State<HomeScreenTopPart> {
         height: 30.0,
         width: 40.0,
         decoration: BoxDecoration(
-          color: Color(0x99FFFFFF),
-          borderRadius: BorderRadius.circular(25.0),
+          color: Color(0xFFFFC5C5),
+          // (0x99FFFFFF),
+          borderRadius: BorderRadius.circular(15.0),
         ),
         child: Icon(
           _icons[index],

@@ -24,23 +24,84 @@ class DetailsScreens extends StatelessWidget {
     return AppBar(
       backgroundColor: demoheadphone.color[0],
       elevation: 0,
-      leading: IconButton(
-        icon: SvgPicture.asset(
-          'assets/icons/back.svg',
-          color: Colors.white,
+      leading: Card(
+        elevation: 10,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(35.0),
         ),
-        onPressed: () => Navigator.pop(context),
+        child: ClipOval(
+          child: Material(
+            color: Colors.transparent, // button color
+            child: InkWell(
+              splashColor: Colors.red, // inkwell color
+              child: SizedBox(
+                width: 35,
+                height: 25,
+                child: IconButton(
+                    icon: SvgPicture.asset(
+                      'assets/icons/back_arrow.svg',
+                      color: Colors.deepOrange,
+                    ),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }),
+              ),
+            ),
+          ),
+        ),
       ),
       actions: <Widget>[
-        IconButton(
-          icon: SvgPicture.asset("assets/icons/search.svg"),
-          onPressed: () {},
+        Card(
+          elevation: 10,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(35.0),
+          ),
+          child: ClipOval(
+              child: Material(
+                  color: Colors.transparent, // button color
+                  child: InkWell(
+                    splashColor: Colors.red, // inkwell color
+                    child: SizedBox(
+                      width: 35,
+                      height: 25,
+                      child: IconButton(
+                        onPressed: () => {},
+                        icon: SvgPicture.asset(
+                          'assets/icons/add_to_cart.svg',
+                          color: Colors.deepOrange,
+                        ),
+                      ),
+                    ),
+                  ))),
         ),
-        IconButton(
-          icon: SvgPicture.asset("assets/icons/cart.svg"),
-          onPressed: () {},
+        SizedBox(
+          width: 10,
         ),
-        SizedBox(width: kDefaultPaddin / 2)
+        Card(
+            elevation: 10,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(35.0),
+            ),
+            child: ClipOval(
+              child: Material(
+                color: Colors.transparent, // button color
+                child: InkWell(
+                  splashColor: Colors.red, // inkwell color
+                  child: SizedBox(
+                    width: 35,
+                    height: 35,
+                    child: IconButton(
+                      onPressed: () => {},
+                      icon: SvgPicture.asset(
+                        'assets/icons/menu.svg',
+                        color: Colors.deepOrange,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            )),
+        SizedBox(width: kDefaultPaddin / 1)
       ],
     );
   }
@@ -165,6 +226,9 @@ class Bodys extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
+                    SizedBox(
+                      height: 20,
+                    ),
                     Text(
                       'Classic Designers',
                       style: GoogleFonts.oswald(

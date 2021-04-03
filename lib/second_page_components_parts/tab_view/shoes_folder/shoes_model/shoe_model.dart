@@ -87,7 +87,92 @@ List<Shoe> shoes = [
       colore: Color(0xffF6E475),
       cardColor2e: Color(0XffFDDCC1),
       illustration: "Casual Heals"),
+  Shoe(
+      ide: 7,
+      titlee: "CATHY",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/reebok-nano-x-shoes-removebg-preview.png",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 8,
+      titlee: "BOOTS",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/1392903_5_large-removebg-preview.png",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 9,
+      titlee: "SPENCER",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/shoeman_5.png",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 10,
+      titlee: "A.JORDAN",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/shoes2.png",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 11,
+      titlee: "NIKE",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/reebok-nano-x-shoes-removebg-preview (1).png",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 12,
+      titlee: "REBOOK",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/timber.jpg",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 12,
+      titlee: "NIKE",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/nike_sneakers.jpg",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
+  Shoe(
+      ide: 12,
+      titlee: "NIKE",
+      pricee: 234,
+      sizee: 12,
+      descriptione:
+          "When you find a workout style that makes you feel alive, it’s like unlocking a door to your full potential. Make the time to lace up your gym shoes and get your workout on. Reebok has athletic shoes made for training, studio, running, weightlifting and more. Whether you’re a well-seasoned athlete or a fitness newbie just learning the ropes",
+      imagee: "assets/images/nike.jpg",
+      colore: Color(0xffF6E475),
+      cardColor2e: Color(0XffFDDCC1),
+      illustration: "Casual Heals"),
 ];
-
-// String dummyText =
-//     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";

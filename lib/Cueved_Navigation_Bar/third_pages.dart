@@ -1,14 +1,13 @@
 // import 'package:experiment_seventeen_fouth/all_models/all_orientation.dart';
-
 import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Back_Home(),
-    ));
+// void main() => runApp(MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Back_Home(),
+//     ));
 
 class Back_Home extends StatelessWidget {
 // This widget is the root of your application.
@@ -30,18 +29,6 @@ class Back_Home extends StatelessWidget {
     );
   }
 }
-
-// class Back_Homes extends StatefulWidget {
-//   @override
-//   _Back_HomesState createState() => _Back_HomesState();
-// }
-//
-// class _Back_HomesState extends State<Back_Homes> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container();
-//   }
-// }
 
 class SplashScreen extends StatefulWidget {
   @override

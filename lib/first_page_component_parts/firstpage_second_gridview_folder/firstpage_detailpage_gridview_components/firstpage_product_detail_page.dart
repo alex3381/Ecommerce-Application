@@ -37,29 +37,80 @@ class Sliverlist_Productdetail extends StatelessWidget {
             floating: true,
             snap: true,
             centerTitle: true,
-            leading: IconButton(
-                icon: SvgPicture.asset(
-                  'assets/icons/back_arrow.svg',
-                  color: Colors.white,
+            leading: Card(
+              elevation: 10,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(35.0),
+              ),
+              child: ClipOval(
+                child: Material(
+                  color: Colors.transparent, // button color
+                  child: InkWell(
+                    splashColor: Colors.red, // inkwell color
+                    child: SizedBox(
+                      width: 35,
+                      height: 35,
+                      child: IconButton(
+                          icon: SvgPicture.asset(
+                            'assets/icons/back_arrow.svg',
+                            color: demoproductions.cardColor2,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          }),
+                    ),
+                  ),
                 ),
-                onPressed: () {
-                  Navigator.pop(context);
-                }),
+              ),
+            ),
             actions: <Widget>[
-              IconButton(
-                onPressed: () => {},
-                icon: SvgPicture.asset(
-                  'assets/icons/add_to_cart.svg',
-                  color: Colors.white,
+              Card(
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(35.0),
                 ),
+                child: ClipOval(
+                    child: Material(
+                        color: Colors.transparent, // button color
+                        child: InkWell(
+                          splashColor: Colors.red, // inkwell color
+                          child: SizedBox(
+                            width: 35,
+                            height: 35,
+                            child: IconButton(
+                              onPressed: () => {},
+                              icon: SvgPicture.asset(
+                                'assets/icons/add_to_cart.svg',
+                                color: demoproductions.cardColor2,
+                              ),
+                            ),
+                          ),
+                        ))),
               ),
-              IconButton(
-                onPressed: () => {},
-                icon: SvgPicture.asset(
-                  'assets/icons/menu.svg',
-                  color: Colors.white,
-                ),
-              ),
+              Card(
+                  elevation: 10,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(35.0),
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.transparent, // button color
+                      child: InkWell(
+                        splashColor: Colors.red, // inkwell color
+                        child: SizedBox(
+                          width: 35,
+                          height: 35,
+                          child: IconButton(
+                            onPressed: () => {},
+                            icon: SvgPicture.asset(
+                              'assets/icons/menu.svg',
+                              color: demoproductions.cardColor2,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )),
             ],
 
             expandedHeight: 230,
