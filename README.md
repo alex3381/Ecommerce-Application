@@ -14,6 +14,19 @@ landing page
 
 product detail view
 
+
+
+https://user-images.githubusercontent.com/59268114/158406132-f9831243-aeca-48ce-8059-6b865f12f8e1.mp4
+
+
+
+
+
+
+
+https://user-images.githubusercontent.com/59268114/158407897-816393ef-f785-4500-97d8-7db212daa895.mp4
+
+
 ![copy1](https://user-images.githubusercontent.com/59268114/158399644-4b9c63a3-9d2b-40ec-8815-1e909dce99ee.jpg)
 
 ![copy2](https://user-images.githubusercontent.com/59268114/158399676-dee0428b-c84d-4cab-990a-878f7a5d5d5d.jpg)
@@ -26,5 +39,5 @@ product detail view
 
 ![copy7](https://user-images.githubusercontent.com/59268114/158399904-ebde8c9f-fac6-4f22-bf43-db2eb5ed5ed4.jpg)
 
-https://user-images.githubusercontent.com/59268114/158406132-f9831243-aeca-48ce-8059-6b865f12f8e1.mp4
+
 
