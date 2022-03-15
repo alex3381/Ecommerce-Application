@@ -14,6 +14,5 @@ product detail view
 ![copy6](https://user-images.githubusercontent.com/59268114/158399809-9131ec8c-12fb-4921-b10a-407c3731aa7b.jpg)
 ![copy7](https://user-images.githubusercontent.com/59268114/158399904-ebde8c9f-fac6-4f22-bf43-db2eb5ed5ed4.jpg)
 
-
-Uploading mobizen_20220314_193811[1].mp4…
+https://user-images.githubusercontent.com/59268114/158406132-f9831243-aeca-48ce-8059-6b865f12f8e1.mp4
 
